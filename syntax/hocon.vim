@@ -64,7 +64,7 @@ syn match hoconUnit "Y\>\|y\|Yi\>\|YiB\>\|yobibyte\>\|yobibytes\>" contained
 
 syn region hoconVariable start="\${" end="}"
 
-syn match hoconUnquotedString '[a-zA-Z_][a-zA-Z0-9_.]*'
+syn match hoconUnquotedString '[a-zA-Z_][a-zA-Z0-9_.-]*'
 
 syn keyword hoconKeyword include nextgroup=hoconString skipwhite
 
